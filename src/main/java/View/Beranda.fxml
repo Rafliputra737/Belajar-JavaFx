@@ -36,7 +36,7 @@
                     <TextField fx:id="txtMakanan" promptText="Masukkan Nama Makanan" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                     
                     <Label text="Harga (Rp):" GridPane.rowIndex="3" />
-                    <TextField fx:id="txtHarga" promptText="Masukkan Harga (mis: 25000)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <TextField fx:id="txtHarga" promptText="Masukkan Harga (contoh: 25000)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
                     <Label text="Metode Pembayaran:" GridPane.rowIndex="4" />
                     <ChoiceBox fx:id="cbPembayaran" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
