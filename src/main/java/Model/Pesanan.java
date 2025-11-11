@@ -26,15 +26,24 @@ public class Pesanan {
         this.tanggal = new SimpleObjectProperty<>(tanggal);
     }
 
-    // --- Getter dan Setter Biasa (Opsional, tapi praktik baik) ---
-    public String getNamaPemesan() { return namaPemesan.get(); }
-    public void setNamaPemesan(String namaPemesan) { this.namaPemesan.set(namaPemesan); }
-
-    // --- Property Methods (WAJIB untuk TableView) ---
-    public StringProperty namaPemesanProperty() { return namaPemesan; }
-    public StringProperty namaMakananProperty() { return namaMakanan; }
-    public DoubleProperty hargaProperty() { return harga; }
-    public ObjectProperty<LocalDate> tanggalProperty() { return tanggal; }
+    public String getNamaPemesan() { 
+        return namaPemesan.get(); 
+    }
+    public void setNamaPemesan(String namaPemesan) { 
+        this.namaPemesan.set(namaPemesan); 
+    }
+    public StringProperty namaPemesanProperty() { 
+        return namaPemesan; 
+    }
+    public StringProperty namaMakananProperty() { 
+        return namaMakanan; 
+    }
+    public DoubleProperty hargaProperty() { 
+        return harga; 
+    }
+    public ObjectProperty<LocalDate> tanggalProperty() { 
+        return tanggal; 
+    }
 
     public void setNamaMakanan(String text) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
@@ -51,4 +60,5 @@ public class Pesanan {
     return tanggal.get(); // Mengambil nilai dari Property
 }
     
+
 }
