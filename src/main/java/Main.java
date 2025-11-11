@@ -21,12 +21,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        // Pastikan path FXML sesuai dengan lokasi Anda
         URL url= new File ("src/main/java/View/Beranda.fxml").toURI().toURL();
         Scene s = new Scene (FXMLLoader.load(url));
-    // show stage
-    stage.setScene(s);
-    stage.show();
+        // show stage
+        stage.setScene(s);
+        stage.show();
 
     }
 
@@ -36,4 +35,5 @@ public class Main extends Application {
 }
     
     
+
 
